@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import leadRoutes from "./routes/lead.routes";
 
 dotenv.config();
 
@@ -7,8 +8,10 @@ const app = express();
 app.use(express.json());
 
 app.get("/health", (req, res) => {
-  res.json({ status: "ok", service: "lead-automation-system" });
+  res.json({ status: "ok" });
 });
+
+app.use("/api/leads", leadRoutes);
 
 const PORT = process.env.PORT || 3000;
 
