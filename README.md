@@ -59,14 +59,6 @@ Slack Notification (HOT Leads)
 
 ---
 
-## 📸 Demo
-
-- Incoming API request (Postman / backend)
-- n8n workflow execution
-- Slack alert for HOT lead
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone Repository
@@ -93,23 +85,6 @@ npm run dev
 
 docker run -it --rm -p 5678:5678 n8nio/n8n
 
-
-### 5. Trigger API
-
-Send POST request:
-
-
-POST /leads
-
-{
-"name": "Ali",
-"email": "ali@company.com
-",
-"source": "website"
-}
-
-
----
 
 ## 💡 Use Cases
 
